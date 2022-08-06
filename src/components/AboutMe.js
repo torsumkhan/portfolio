@@ -11,8 +11,14 @@ const AboutMe = () => {
       <StyledAboutDesc>
         <h2>Marketer/humanitarian turned developer.</h2>
         <p>
-          Passion for combining logic and design to create user-friendly
-          applications.
+          <span>Passion</span> for combining logic and design to create
+          user-friendly applications.
+        </p>
+        <p>
+          <span>Love</span> working with React and other cool frameworks.
+        </p>
+        <p>
+          Lifelong <span>learner</span> and proud dad.
         </p>
         <p>If you fancy a chat feel free to drop me a line.</p>
       </StyledAboutDesc>
@@ -38,11 +44,21 @@ const StyledAboutDesc = styled(motion.div)`
   text-align: left;
   font-size: 2.8rem;
   margin-left: 3rem;
-  h2 {
+  span {
     font-weight: 400;
+  }
+  h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 3rem;
   }
   p {
     font-weight: 200;
+    font-size: 2.6rem;
+  }
+  p:last-child {
+    margin-top: 3rem;
   }
 `;
 

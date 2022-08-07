@@ -10,6 +10,7 @@ const MainSection = () => {
       <Intro />
       <AboutMe />
       <Projects />
+      <Skills />
     </div>
   );
 };

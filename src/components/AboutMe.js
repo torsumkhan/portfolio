@@ -47,7 +47,7 @@ const StyledContainer = styled(motion.div)`
 const StyledTitle = styled(motion.div)`
   position: absolute;
   top: 20%;
-  font-size: 6rem;
+  font-size: 4rem;
   opacity: 0.2;
   h1 {
     font-weight: 700;

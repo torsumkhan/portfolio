@@ -35,3 +35,25 @@ export const titleCaption = {
     },
   },
 };
+
+export const aboutmetitle = {
+  hidden: {
+    opacity: 0,
+    x: 0,
+    transition: {
+      type: "tween",
+      ease: "easeInOut",
+      duration: 3,
+    },
+  },
+  show: {
+    x: 600,
+    opacity: 1,
+
+    transition: {
+      type: "tween",
+      ease: "circOut",
+      duration: 3,
+    },
+  },
+};

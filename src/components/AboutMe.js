@@ -1,11 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { aboutmetitle } from "../util";
 
 const AboutMe = () => {
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.75 });
+
+  if (view) {
+    controls.start("show");
+  } else {
+    controls.start("hidden");
+  }
+
   return (
-    <StyledContainer>
-      <StyledTitle>
+    <StyledContainer ref={element}>
+      <StyledTitle variants={aboutmetitle} initial="hidden" animate={controls}>
         <h1>ABOUT ME</h1>
       </StyledTitle>
       <StyledAboutDesc>
@@ -41,6 +52,7 @@ const StyledTitle = styled(motion.div)`
   h1 {
     font-weight: 700;
     color: gray;
+    opacity: 0.3;
   }
 `;
 

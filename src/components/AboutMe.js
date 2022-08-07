@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <StyledContainer>
       <StyledTitle>
-        <h1>About me</h1>
+        <h1>ABOUT ME</h1>
       </StyledTitle>
       <StyledAboutDesc>
         <h2>Marketer/humanitarian turned developer.</h2>
@@ -30,12 +30,18 @@ const StyledContainer = styled(motion.div)`
   height: 50vh;
   width: 100%;
   position: relative;
+  margin-top: 4rem;
 `;
 
 const StyledTitle = styled(motion.div)`
   position: absolute;
-  top: 5%;
-  left: -15%;
+  top: 20%;
+  font-size: 6rem;
+  opacity: 0.2;
+  h1 {
+    font-weight: 700;
+    color: gray;
+  }
 `;
 
 const StyledAboutDesc = styled(motion.div)`
@@ -43,18 +49,17 @@ const StyledAboutDesc = styled(motion.div)`
   line-height: 4rem;
   text-align: left;
   font-size: 2.8rem;
-  margin-left: 3rem;
+  margin-left: 8rem;
   span {
-    font-weight: 400;
+    font-weight: 600;
   }
   h2 {
-    text-align: center;
     font-weight: 400;
     font-size: 3rem;
     margin-bottom: 3rem;
   }
   p {
-    font-weight: 200;
+    font-weight: 400;
     font-size: 2.6rem;
   }
   p:last-child {

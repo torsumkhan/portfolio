@@ -1,23 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { container, titleAnim, titleCaption } from "../util";
 
 const Intro = () => {
   return (
-    <div>
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <StyledIntro>
         <div className="title">
           <StyledHide>
-            <h2>hello, I am Torsum,</h2>
+            <motion.h2 variants={titleAnim}>hello, I am Torsum,</motion.h2>
           </StyledHide>
           <StyledHide>
-            <h3>
+            <motion.h3 variants={titleCaption}>
               Designer & <span>Front-end Developer</span>
-            </h3>
+            </motion.h3>
           </StyledHide>
         </div>
       </StyledIntro>
-    </div>
+    </motion.div>
   );
 };
 

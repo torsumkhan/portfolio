@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import auth0 from "../images/auth0.PNG";
 
 const Projects = () => {
   return (
@@ -8,9 +9,12 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className="project">
         <h2>Kursi-ecommerce store</h2>
-        <div className="details">
-          <p>Project Description</p>
-          <img />
+        <div className="details-container">
+          <div className="details">
+            <p>Project Description</p>
+            <p>Built with: </p>
+          </div>
+          <img src={auth0} />
         </div>
         <div className="project-line"></div>
       </div>
@@ -21,7 +25,7 @@ const Projects = () => {
 const StyledProjectContainer = styled(motion.div)`
   min-height: 100vh;
   padding: 5rem 10rem;
-  background: red;
+
   color: white;
   h2 {
     display: block;
@@ -36,6 +40,20 @@ const StyledProjectContainer = styled(motion.div)`
   .project {
     padding: 3rem 0rem;
     cursor: pointer;
+  }
+
+  .details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    .details {
+      margin-top: 3rem;
+    }
+
+    img {
+      margin-top: 3rem;
+      width: 60%;
+    }
   }
 `;
 

@@ -42,8 +42,17 @@ const Projects = () => {
                     <FaStripe size={42} />
                   </div>
                   <p>
-                    <a href="https://onlinestore-chi.vercel.app/">Live Site</a>|
-                    <a href="https://github.com/torsumkhan/ecommerce-store">
+                    <a
+                      href="https://onlinestore-chi.vercel.app/"
+                      target="_blank"
+                    >
+                      Live Site
+                    </a>
+                    |
+                    <a
+                      href="https://github.com/torsumkhan/ecommerce-store"
+                      target="_blank"
+                    >
                       Github
                     </a>
                   </p>
@@ -68,7 +77,10 @@ const Projects = () => {
                     <SiRedux size={42} />
                   </div>
                   <p>
-                    <a href="https://github.com/torsumkhan/capsule-social-media-app">
+                    <a
+                      href="https://github.com/torsumkhan/capsule-social-media-app"
+                      target="_blank"
+                    >
                       Github
                     </a>
                   </p>
@@ -92,8 +104,16 @@ const Projects = () => {
                     <SiRedux size={42} />
                   </div>
                   <p>
-                    <a href="https://superign.netlify.app/">Live Site</a> |
-                    <a href="https://github.com/torsumkhan/super-ign">Github</a>
+                    <a href="https://superign.netlify.app/" target="_blank">
+                      Live Site
+                    </a>
+                    |
+                    <a
+                      href="https://github.com/torsumkhan/super-ign"
+                      target="_blank"
+                    >
+                      Github
+                    </a>
                   </p>
                 </div>
                 <img src={ign} />
@@ -117,8 +137,14 @@ const Projects = () => {
                     <SiTailwindcss size={42} />
                   </div>
                   <p>
-                    <a href="https://superspotify.netlify.app/">Live Site</a> |
-                    <a href="https://github.com/torsumkhan/my-spotify">
+                    <a href="https://superspotify.netlify.app/" target="_blank">
+                      Live Site
+                    </a>
+                    |
+                    <a
+                      href="https://github.com/torsumkhan/my-spotify"
+                      target="_blank"
+                    >
                       Github
                     </a>
                   </p>
@@ -142,7 +168,12 @@ const Projects = () => {
                     <FaCss3 size={42} />
                     <SiJavascript size={42} />
                   </div>
-                  <p>Live Site | Github</p>
+                  <p>
+                    <a href="https://megapexels.netlify.app/" target="_blank">
+                      Live Site
+                    </a>
+                    | <a>Github</a>
+                  </p>
                 </div>
                 <img src={pexels} />
               </div>
@@ -163,7 +194,9 @@ const Projects = () => {
                     <SiBlender size={42} />
                   </div>
                   <p>
-                    <a href="https://torsum.itch.io/never-gone">Live Site</a>
+                    <a href="https://torsum.itch.io/never-gone" target="_blank">
+                      Live Site
+                    </a>
                   </p>
                 </div>
                 <img src={never} />

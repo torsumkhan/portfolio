@@ -24,10 +24,21 @@ const Contact = () => {
         <h1>CONTACT</h1>
       </StyledTitle>
       <StyledLogoContainer>
-        <img src={github} />
-        <img src={email} />
-        <img src={linkedin} />
-        <img src={twitter} />
+        <a href="https://github.com/torsumkhan" target="_blank">
+          <img src={github} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/torsum-khan-pmp-402aa167/"
+          target="_blank"
+        >
+          <img src={linkedin} />
+        </a>
+        <a href="mailto: torsum.khan@gmail.com" target="_blank">
+          <img src={email} />
+        </a>
+        <a href="https://twitter.com/home" target="_blank">
+          <img src={twitter} />
+        </a>
       </StyledLogoContainer>
     </StyledContainer>
   );

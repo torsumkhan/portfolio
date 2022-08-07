@@ -39,12 +39,12 @@ const StyledIntro = styled(motion.div)`
 const StyledHide = styled(motion.div)`
   h2 {
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 700;
   }
   h3 {
     margin-top: 2rem;
     font-size: 3.4rem;
-    font-weight: 200;
+    font-weight: 400;
   }
 `;
 

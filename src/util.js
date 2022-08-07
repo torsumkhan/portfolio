@@ -57,3 +57,25 @@ export const aboutmetitle = {
     },
   },
 };
+
+export const contacttitle = {
+  hidden: {
+    opacity: 0,
+    x: 900,
+    transition: {
+      type: "tween",
+      ease: "easeInOut",
+      duration: 3,
+    },
+  },
+  show: {
+    x: 0,
+    opacity: 1,
+
+    transition: {
+      type: "tween",
+      ease: "circOut",
+      duration: 3,
+    },
+  },
+};

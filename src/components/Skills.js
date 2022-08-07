@@ -73,7 +73,7 @@ const Skills = () => {
 };
 
 const StyledContainer = styled(motion.div)`
-  height: 100vh;
+  height: 60vh;
   width: 100%;
   margin: 6rem auto;
   position: relative;

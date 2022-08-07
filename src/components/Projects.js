@@ -36,7 +36,7 @@ const Projects = () => {
                   <p>
                     A fullstack Ecommerce store for luxury home furniture.
                     Complete with checkout, payment solutions using Stripe and
-                    user authentication with Auth0
+                    user authentication with Auth0.
                   </p>
                   <p>Made with:</p>
                   <div>
@@ -74,7 +74,7 @@ const Projects = () => {
                   <p>
                     A full stack social media application that can let users
                     post content, upload and share images and create a digital
-                    album of images and other media
+                    album of images and other media.
                   </p>
                   <p>Made with:</p>
                   <div>
@@ -101,7 +101,7 @@ const Projects = () => {
                   <h3>Frontend Developer | UI Designer</h3>
                   <p>
                     A videogame database application that fetches trending and
-                    popular videogames data from an external API
+                    popular videogames data from an external API.
                   </p>
                   <p>Made with:</p>
                   <div>
@@ -164,9 +164,10 @@ const Projects = () => {
                 <div className="details">
                   <h3>Frontend Developer | UI Designer</h3>
                   <p>
-                    A music streaming app that fetches music from an external
-                    database and has the functionality of a typical music
-                    streaming app.
+                    Image sharing app that fetches the most-updated images from
+                    the popular image viewing website, Pexels. Has endless
+                    scrolling functionality and a search feature to search for
+                    different categories.
                   </p>
                   <p>Made with:</p>
                   <div>
@@ -197,7 +198,7 @@ const Projects = () => {
                   <h3>Frontend Developer | Designer</h3>
                   <p>
                     Web application for soccer fans to get current and past
-                    rankings from major international leagues
+                    rankings from major international leagues.
                   </p>
                   <p>Made with:</p>
                   <div>

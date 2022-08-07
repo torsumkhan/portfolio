@@ -8,6 +8,7 @@ import email from "../images/logos/email.png";
 import github from "../images/logos/github.png";
 import linkedin from "../images/logos/linkedin.png";
 import twitter from "../images/logos/twitter.png";
+import resume from "../images/logos/resume.png";
 
 const Contact = () => {
   const controls = useAnimation();
@@ -38,6 +39,12 @@ const Contact = () => {
         </a>
         <a href="https://twitter.com/home" target="_blank">
           <img src={twitter} />
+        </a>
+        <a
+          href="https://www.cakeresume.com/s--RqOySFq5ujyGPXSiQrHMPw--/torsum-khan"
+          target="_blank"
+        >
+          <img src={resume} />
         </a>
       </StyledLogoContainer>
     </StyledContainer>

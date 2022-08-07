@@ -8,9 +8,11 @@ const DropDown = ({ children, title }) => {
       layout
       className="project"
       onClick={() => setDropDown(!dropDown)}
-      style={{ cursor: "Pointer" }}
     >
-      <motion.h2 layout style={{ fontSize: "3rem", fontWeight: 400 }}>
+      <motion.h2
+        layout
+        style={{ fontSize: "3rem", fontWeight: 400, cursor: "pointer" }}
+      >
         {title}
       </motion.h2>
       {dropDown ? children : ""}

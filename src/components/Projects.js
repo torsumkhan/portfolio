@@ -1,55 +1,173 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { FaReact, FaStripe, FaCss3, FaUnity } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import {
+  SiJavascript,
+  SiGraphql,
+  SiStrapi,
+  SiRedux,
+  SiTailwindcss,
+  SiHtml5,
+  SiBlender,
+} from "react-icons/si";
 import { motion } from "framer-motion";
-import auth0 from "../images/auth0.PNG";
+
 import DropDown from "./DropDown";
 import { AnimateSharedLayout } from "framer-motion";
+import kursi from "../images/01-kursi.png";
+import ign from "../images/03-superign.png";
+import spotify from "../images/04-spotify.png";
+import pexels from "../images/05-pexels.png";
+import never from "../images/06-never-gone.png";
 
 const Projects = () => {
   return (
     <StyledProjectContainer>
-      <h2>Projects</h2>
       <div>
         <AnimateSharedLayout>
           <motion.div className="details-container" layout>
             <DropDown title="01 Kursi - Ecommerce Store">
-              <div className="details">
-                <p>Project Description</p>
-                <p>Built with: </p>
+              <div className="grid">
+                <div className="details">
+                  <h3>Fullstack Developer | UI Designer</h3>
+                  <p>Ecommerce store for luxury home furniture</p>
+                  <p>Made with:</p>
+                  <div>
+                    <FaReact size={42} />
+                    <TbBrandNextjs size={42} />
+                    <SiJavascript size={42} />
+                    <SiGraphql size={42} />
+                    <SiStrapi size={42} />
+                    <FaStripe size={42} />
+                  </div>
+                  <p>
+                    <a href="https://onlinestore-chi.vercel.app/">Live Site</a>|
+                    <a href="https://github.com/torsumkhan/ecommerce-store">
+                      Github
+                    </a>
+                  </p>
+                </div>
+                <img src={kursi} />
               </div>
-              <img src={auth0} />
             </DropDown>
 
-            <DropDown title="02 Capture - Social Media App">
-              <div className="details">
-                <p>Project Description</p>
-                <p>Built with: </p>
+            <DropDown title="02 Capture - Social Media Application">
+              <div className="grid">
+                <div className="details">
+                  <h3>Fullstack Developer | UI Designer</h3>
+                  <p>
+                    A full stack social media application that can let users
+                    post content, upload and share images and create a digital
+                    album of images and other media
+                  </p>
+                  <p>Made with:</p>
+                  <div>
+                    <SiJavascript size={42} />
+                    <FaReact size={42} />
+                    <SiRedux size={42} />
+                  </div>
+                  <p>
+                    <a href="https://github.com/torsumkhan/capsule-social-media-app">
+                      Github
+                    </a>
+                  </p>
+                </div>
+                <img src={ign} />
               </div>
-              <img src={auth0} />
             </DropDown>
 
-            <DropDown title="03 SuperIGN - Video Game Database">
-              <div className="details">
-                <p>Project Description</p>
-                <p>Built with: </p>
+            <DropDown title="03 SuperIGN - Videogame Database">
+              <div className="grid">
+                <div className="details">
+                  <h3>Frontend Developer | UI Designer</h3>
+                  <p>
+                    A videogame database application that fetches trending and
+                    popular videogames data from an external API
+                  </p>
+                  <p>Made with:</p>
+                  <div>
+                    <FaReact size={42} />
+                    <SiJavascript size={42} />
+                    <SiRedux size={42} />
+                  </div>
+                  <p>
+                    <a href="https://superign.netlify.app/">Live Site</a> |
+                    <a href="https://github.com/torsumkhan/super-ign">Github</a>
+                  </p>
+                </div>
+                <img src={ign} />
               </div>
-              <img src={auth0} />
             </DropDown>
 
-            <DropDown title="04 mySpotify - Music Streaming Application">
-              <div className="details">
-                <p>Project Description</p>
-                <p>Built with: </p>
+            <DropDown title="04 MySpotify - Music Streaming App">
+              <div className="grid">
+                <div className="details">
+                  <h3>Frontend Developer | UI Designer</h3>
+                  <p>
+                    A music streaming app that fetches music from an external
+                    database and has the functionality of a typical music
+                    streaming app.
+                  </p>
+                  <p>Made with:</p>
+                  <div>
+                    <FaReact size={42} />
+                    <SiJavascript size={42} />
+                    <SiRedux size={42} />
+                    <SiTailwindcss size={42} />
+                  </div>
+                  <p>
+                    <a href="https://superspotify.netlify.app/">Live Site</a> |
+                    <a href="https://github.com/torsumkhan/my-spotify">
+                      Github
+                    </a>
+                  </p>
+                </div>
+                <img src={spotify} />
               </div>
-              <img src={auth0} />
             </DropDown>
 
-            <DropDown title="05 MegaPexels - Image Sharing Application">
-              <div className="details">
-                <p>Project Description</p>
-                <p>Built with: </p>
+            <DropDown title="05 MegaPexels - Image Sharing App">
+              <div className="grid">
+                <div className="details">
+                  <h3>Frontend Developer | UI Designer</h3>
+                  <p>
+                    A music streaming app that fetches music from an external
+                    database and has the functionality of a typical music
+                    streaming app.
+                  </p>
+                  <p>Made with:</p>
+                  <div>
+                    <SiHtml5 size={42} />
+                    <FaCss3 size={42} />
+                    <SiJavascript size={42} />
+                  </div>
+                  <p>Live Site | Github</p>
+                </div>
+                <img src={pexels} />
               </div>
-              <img src={auth0} />
+            </DropDown>
+
+            <DropDown title="06 Never Gone - Interactive Video Game">
+              <div className="grid">
+                <div className="details">
+                  <h3>Game Developer | Designer</h3>
+                  <p>
+                    A short, narrative immersive video game where you follow in
+                    the footsteps of a father as he relives memories with his
+                    daughter, depicting the unique quality of this special bond.
+                  </p>
+                  <p>Made with:</p>
+                  <div>
+                    <FaUnity size={42} />
+                    <SiBlender size={42} />
+                  </div>
+                  <p>
+                    <a href="https://torsum.itch.io/never-gone">Live Site</a>
+                  </p>
+                </div>
+                <img src={never} />
+              </div>
             </DropDown>
           </motion.div>
         </AnimateSharedLayout>
@@ -72,9 +190,19 @@ const StyledProjectContainer = styled(motion.div)`
     margin: 3rem 0rem;
     width: 100%;
   }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-top: 3rem;
+      width: 60%;
+    }
+  }
+
   .project {
     padding: 1rem 0rem;
-    cursor: pointer;
   }
 
   .details-container {
@@ -82,14 +210,31 @@ const StyledProjectContainer = styled(motion.div)`
     flex-direction: column;
 
     .details {
-      margin-top: 3rem;
-    }
-
-    img {
-      margin-top: 3rem;
-      width: 60%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      div {
+        display: flex;
+        gap: 1.2rem;
+      }
     }
   }
+`;
+
+const styledGrid = styled(motion.div)`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `;
 
 export default Projects;

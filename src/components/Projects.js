@@ -21,6 +21,7 @@ import spotify from "../images/04-spotify.png";
 import pexels from "../images/05-pexels.png";
 import never from "../images/06-never-gone.png";
 import football from "../images/06-football.png";
+import capture from "../images/02-capture.png";
 
 const Projects = () => {
   return (
@@ -90,7 +91,7 @@ const Projects = () => {
                     </a>
                   </p>
                 </div>
-                <img src={ign} />
+                <img src={capture} />
               </div>
             </DropDown>
 

@@ -20,6 +20,7 @@ import ign from "../images/03-superign.png";
 import spotify from "../images/04-spotify.png";
 import pexels from "../images/05-pexels.png";
 import never from "../images/06-never-gone.png";
+import football from "../images/06-football.png";
 
 const Projects = () => {
   return (
@@ -176,7 +177,13 @@ const Projects = () => {
                     <a href="https://megapexels.netlify.app/" target="_blank">
                       Live Site
                     </a>
-                    | <a>Github</a>
+                    |{" "}
+                    <a
+                      href="https://github.com/torsumkhan/mega-pexel"
+                      target="_blank"
+                    >
+                      Github
+                    </a>
                   </p>
                 </div>
                 <img src={pexels} />
@@ -197,12 +204,22 @@ const Projects = () => {
                     <FaReact size={42} />
                   </div>
                   <p>
-                    <a href="https://torsum.itch.io/never-gone" target="_blank">
+                    <a
+                      href="https://super-football.netlify.app/"
+                      target="_blank"
+                    >
                       Live Site
+                    </a>
+                    |
+                    <a
+                      href="https://github.com/torsumkhan/Football-app"
+                      target="_blank"
+                    >
+                      Github
                     </a>
                   </p>
                 </div>
-                <img src={never} />
+                <img src={football} />
               </div>
             </DropDown>
 

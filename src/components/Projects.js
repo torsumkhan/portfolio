@@ -3,23 +3,56 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import auth0 from "../images/auth0.PNG";
 import DropDown from "./DropDown";
+import { AnimateSharedLayout } from "framer-motion";
 
 const Projects = () => {
   return (
     <StyledProjectContainer>
       <h2>Projects</h2>
       <div>
-        <h2>01 Kursi-ecommerce store</h2>
-        <div className="details-container">
-          <DropDown>
-            <div className="details">
-              <p>Project Description</p>
-              <p>Built with: </p>
-            </div>
-            <img src={auth0} />
-          </DropDown>
-        </div>
-        <div className="project-line"></div>
+        <AnimateSharedLayout>
+          <motion.div className="details-container" layout>
+            <DropDown title="01 Kursi - Ecommerce Store">
+              <div className="details">
+                <p>Project Description</p>
+                <p>Built with: </p>
+              </div>
+              <img src={auth0} />
+            </DropDown>
+
+            <DropDown title="02 Capture - Social Media App">
+              <div className="details">
+                <p>Project Description</p>
+                <p>Built with: </p>
+              </div>
+              <img src={auth0} />
+            </DropDown>
+
+            <DropDown title="03 SuperIGN - Video Game Database">
+              <div className="details">
+                <p>Project Description</p>
+                <p>Built with: </p>
+              </div>
+              <img src={auth0} />
+            </DropDown>
+
+            <DropDown title="04 mySpotify - Music Streaming Application">
+              <div className="details">
+                <p>Project Description</p>
+                <p>Built with: </p>
+              </div>
+              <img src={auth0} />
+            </DropDown>
+
+            <DropDown title="05 MegaPexels - Image Sharing Application">
+              <div className="details">
+                <p>Project Description</p>
+                <p>Built with: </p>
+              </div>
+              <img src={auth0} />
+            </DropDown>
+          </motion.div>
+        </AnimateSharedLayout>
       </div>
     </StyledProjectContainer>
   );
@@ -27,27 +60,27 @@ const Projects = () => {
 
 const StyledProjectContainer = styled(motion.div)`
   min-height: 100vh;
-  padding: 5rem 10rem;
+  margin: 4rem 8rem;
 
   h2 {
     display: block;
     font-size: 3rem;
   }
   .project-line {
-    background: black;
+    background: gray;
     height: 0.2rem;
-    margin: 2rem 0rem;
+    margin: 3rem 0rem;
     width: 100%;
   }
   .project {
-    padding: 3rem 0rem;
+    padding: 1rem 0rem;
     cursor: pointer;
   }
 
   .details-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+
     .details {
       margin-top: 3rem;
     }

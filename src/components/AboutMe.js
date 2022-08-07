@@ -73,7 +73,7 @@ const StyledAboutDesc = styled(motion.div)`
   }
   h2 {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
   }
   p {

@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import auth0 from "../images/auth0.PNG";
+import DropDown from "./DropDown";
 
 const Projects = () => {
   return (
     <StyledProjectContainer>
       <h2>Projects</h2>
-      <div className="project">
-        <h2>Kursi-ecommerce store</h2>
+      <div>
+        <h2>01 Kursi-ecommerce store</h2>
         <div className="details-container">
-          <div className="details">
-            <p>Project Description</p>
-            <p>Built with: </p>
-          </div>
-          <img src={auth0} />
+          <DropDown>
+            <div className="details">
+              <p>Project Description</p>
+              <p>Built with: </p>
+            </div>
+            <img src={auth0} />
+          </DropDown>
         </div>
         <div className="project-line"></div>
       </div>
@@ -26,7 +29,6 @@ const StyledProjectContainer = styled(motion.div)`
   min-height: 100vh;
   padding: 5rem 10rem;
 
-  color: white;
   h2 {
     display: block;
     font-size: 3rem;

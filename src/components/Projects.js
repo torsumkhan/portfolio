@@ -31,7 +31,11 @@ const Projects = () => {
               <div className="grid">
                 <div className="details">
                   <h3>Fullstack Developer | UI Designer</h3>
-                  <p>Ecommerce store for luxury home furniture</p>
+                  <p>
+                    A fullstack Ecommerce store for luxury home furniture.
+                    Complete with checkout, payment solutions using Stripe and
+                    user authentication with Auth0
+                  </p>
                   <p>Made with:</p>
                   <div>
                     <FaReact size={42} />
@@ -261,6 +265,12 @@ const StyledProjectContainer = styled(motion.div)`
         display: flex;
         gap: 1.2rem;
       }
+    }
+  }
+  @media (max-width: 1700px) {
+    margin-top: 8rem;
+    .details {
+      margin-top: 4rem;
     }
   }
 `;

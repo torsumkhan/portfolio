@@ -17,7 +17,10 @@ const ThankYou = () => {
   return (
     <StyledContainer>
       <h3>Thank you for sticking around &</h3>
-      <p>Have a great {day}</p>
+      <p>
+        You Have an <span>awesome</span> F@*#ing {day}, I mean that shit.
+        Seriously.
+      </p>
     </StyledContainer>
   );
 };
@@ -28,12 +31,20 @@ const StyledContainer = styled(motion.div)`
   margin-top: 6rem;
   margin-left: 8rem;
   text-align: left;
+  span {
+    font-weight: 600;
+  }
   h3 {
     font-size: 3rem;
   }
   p {
+    margin-top: 3rem;
     font-weight: 400;
     font-size: 3.2rem;
+  }
+
+  @media (max-width: 1700px) {
+    margin-top: 30rem;
   }
 `;
 

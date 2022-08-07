@@ -3,18 +3,32 @@ import styled from "styled-components";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { aboutmetitle } from "../util";
-import css from "../images/logos/css.png";
-import figma from "../images/logos/figma.png";
-import git from "../images/logos/git.png";
-import html from "../images/logos/html.png";
-import js from "../images/logos/js.png";
-import mongo from "../images/logos/mongo.png";
-import python from "../images/logos/python.png";
-import react from "../images/logos/react.png";
-import sass from "../images/logos/sass.png";
-import sql from "../images/logos/sql.png";
-import node from "../images/logos/node.png";
-import unity from "../images/logos/unity.png";
+// import css from "../images/logos/css.png";
+// import figma from "../images/logos/figma.png";
+// import git from "../images/logos/git.png";
+// import html from "../images/logos/html.png";
+// import js from "../images/logos/js.png";
+// import mongo from "../images/logos/mongo.png";
+// import python from "../images/logos/python.png";
+// import react from "../images/logos/react.png";
+// import sass from "../images/logos/sass.png";
+// import sql from "../images/logos/sql.png";
+// import node from "../images/logos/node.png";
+// import unity from "../images/logos/unity.png";
+import { FaHtml5, FaGitAlt } from "react-icons/fa";
+import { DiCss3, DiSass } from "react-icons/di";
+import {
+  SiJavascript,
+  SiReact,
+  SiTailwindcss,
+  SiPython,
+  SiPostgresql,
+  SiMongodb,
+  SiUnity,
+  SiFigma,
+  SiAdobexd,
+} from "react-icons/si";
+import { TbBrandNextjs, TbApi } from "react-icons/tb";
 
 const Skills = () => {
   const controls = useAnimation();
@@ -31,49 +45,103 @@ const Skills = () => {
         <h1>SKILLS</h1>
       </StyledTitle>
       <StyledLogoContainer>
-        <StyledLogos>
-          <img src={html} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={css} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={js} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={react} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={sass} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={node} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={python} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={sql} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={mongo} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={git} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={figma} />
-        </StyledLogos>
-        <StyledLogos>
-          <img src={unity} />
-        </StyledLogos>
+        <li>
+          <span>
+            <FaHtml5 size={70} />
+          </span>
+          <p>HTML5</p>
+        </li>
+        <li>
+          <span>
+            <DiCss3 size={70} />
+          </span>
+          <p>CSS</p>
+        </li>
+        <li>
+          <span>
+            <SiJavascript size={70} />
+          </span>
+          <p>JAVASCRIPT + ES6</p>
+        </li>
+        <li>
+          <span>
+            <DiSass size={70} />
+          </span>
+          <p>SASS</p>
+        </li>
+        <li>
+          <span>
+            <SiTailwindcss size={70} />
+          </span>
+          <p>TAILWIND</p>
+        </li>
+        <li>
+          <span>
+            <SiReact size={70} />
+          </span>
+          <p>REACTjs</p>
+        </li>
+        <li>
+          <span>
+            <TbBrandNextjs size={70} />
+          </span>
+          <p>NextJs</p>
+        </li>
+        <li>
+          <span>
+            <TbApi size={70} />
+          </span>
+          <p>REST APIS</p>
+        </li>
+        <li>
+          <span>
+            <SiPython size={70} />
+          </span>
+          <p>PYTHON</p>
+        </li>
+        <li>
+          <span>
+            <SiPostgresql size={70} />
+          </span>
+          <p>SQL</p>
+        </li>
+        <li>
+          <span>
+            <SiMongodb size={70} />
+          </span>
+          <p>MONGO DB</p>
+        </li>
+        <li>
+          <span>
+            <FaGitAlt size={70} />
+          </span>
+          <p>GIT</p>
+        </li>
+        <li>
+          <span>
+            <SiFigma size={70} />
+          </span>
+          <p>FIGMA</p>
+        </li>
+        <li>
+          <span>
+            <SiUnity size={70} />
+          </span>
+          <p>UNITY</p>
+        </li>
+        <li>
+          <span>
+            <SiAdobexd size={70} />
+          </span>
+          <p>ADOBE XD</p>
+        </li>
       </StyledLogoContainer>
     </StyledContainer>
   );
 };
 
 const StyledContainer = styled(motion.div)`
-  height: 60vh;
+  height: 100vh;
   width: 100%;
   margin: 6rem auto;
   position: relative;
@@ -81,7 +149,7 @@ const StyledContainer = styled(motion.div)`
 
 const StyledTitle = styled(motion.div)`
   position: absolute;
-  top: 20%;
+  top: 30%;
   font-size: 4rem;
   opacity: 0.2;
   h1 {
@@ -93,13 +161,27 @@ const StyledTitle = styled(motion.div)`
 
 const StyledLogoContainer = styled(motion.ul)`
   justify-content: center;
-  align-items: center;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem auto;
+  margin: 6% 0;
+  padding: 4rem;
+  li {
+    list-style: none;
+    padding: 4rem;
+    flex-basis: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      font-weight: 700;
+    }
+  }
 `;
 
 const StyledLogos = styled(motion.li)`
+  display: flex;
+  justify-content: center;
   text-align: center;
   p {
     margin-top: 0;

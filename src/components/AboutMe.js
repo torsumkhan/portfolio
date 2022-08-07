@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -7,12 +7,13 @@ import { aboutmetitle } from "../util";
 const AboutMe = () => {
   const controls = useAnimation();
   const [element, view] = useInView({ threshold: 0.75 });
-
-  if (view) {
-    controls.start("show");
-  } else {
-    controls.start("hidden");
-  }
+  useEffect(() => {
+    if (view) {
+      controls.start("show");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, view]);
 
   return (
     <StyledContainer ref={element}>
@@ -38,7 +39,7 @@ const AboutMe = () => {
 };
 
 const StyledContainer = styled(motion.div)`
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   position: relative;
   margin-top: 4rem;
@@ -67,7 +68,7 @@ const StyledAboutDesc = styled(motion.div)`
   }
   h2 {
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2.4rem;
     margin-bottom: 3rem;
   }
   p {
@@ -75,7 +76,17 @@ const StyledAboutDesc = styled(motion.div)`
     font-size: 2.6rem;
   }
   p:last-child {
-    margin-top: 3rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 1700px) {
+    h2 {
+      font-size: 2.8rem;
+      text-align: left;
+    }
+    p {
+      font-size: 2rem;
+      margin-top: 0rem;
+    }
   }
 `;
 

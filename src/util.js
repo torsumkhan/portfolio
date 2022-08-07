@@ -39,7 +39,7 @@ export const titleCaption = {
 export const aboutmetitle = {
   hidden: {
     opacity: 0,
-    x: 0,
+    x: 100,
     transition: {
       type: "tween",
       ease: "easeInOut",
@@ -61,7 +61,7 @@ export const aboutmetitle = {
 export const contacttitle = {
   hidden: {
     opacity: 0,
-    x: 900,
+    x: 300,
     transition: {
       type: "tween",
       ease: "easeInOut",

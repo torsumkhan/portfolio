@@ -48,8 +48,12 @@ const StyledContainer = styled(motion.div)`
   height: 60vh;
   width: 55%;
   margin-top: 15rem;
-  margin-left: 10rem;
+  padding-left: 2rem;
+  text-align: left;
   position: relative;
+  @media (max-width: 700px) {
+    margin-top: 1rem;
+  }
 `;
 
 const StyledTitle = styled(motion.div)`
@@ -62,12 +66,38 @@ const StyledTitle = styled(motion.div)`
     color: gray;
     opacity: 0.3;
   }
+  @media (max-width: 900px) {
+    h1 {
+      display: none;
+    }
+  }
 `;
 
 const StyledLogoContainer = styled(motion.dv)`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @media (max-width: 900px) {
+    a {
+      img {
+        width: 10rem;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    a {
+      img {
+        width: 8rem;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 6rem;
+  }
 `;
 
 export default Contact;

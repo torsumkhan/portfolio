@@ -183,7 +183,30 @@ const Projects = () => {
               </div>
             </DropDown>
 
-            <DropDown title="06 Never Gone - Interactive Video Game">
+            <DropDown title="06 Super Football - Soccer Rankings App">
+              <div className="grid">
+                <div className="details">
+                  <h3>Frontend Developer | Designer</h3>
+                  <p>
+                    Web application for soccer fans to get current and past
+                    rankings from major international leagues
+                  </p>
+                  <p>Made with:</p>
+                  <div>
+                    <SiJavascript size={42} />
+                    <FaReact size={42} />
+                  </div>
+                  <p>
+                    <a href="https://torsum.itch.io/never-gone" target="_blank">
+                      Live Site
+                    </a>
+                  </p>
+                </div>
+                <img src={never} />
+              </div>
+            </DropDown>
+
+            <DropDown title="07 Never Gone - Interactive Video Game">
               <div className="grid">
                 <div className="details">
                   <h3>Game Developer | Designer</h3>
@@ -272,6 +295,17 @@ const StyledProjectContainer = styled(motion.div)`
     .details {
       margin-top: 4rem;
     }
+  }
+  @media (max-width: 900px) {
+    .grid {
+      display: flex;
+    }
+    img {
+      display: none;
+    }
+  }
+  @media (max-width: 700px) {
+    margin-top: 10rem;
   }
 `;
 

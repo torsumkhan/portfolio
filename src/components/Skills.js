@@ -3,18 +3,7 @@ import styled from "styled-components";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { aboutmetitle } from "../util";
-// import css from "../images/logos/css.png";
-// import figma from "../images/logos/figma.png";
-// import git from "../images/logos/git.png";
-// import html from "../images/logos/html.png";
-// import js from "../images/logos/js.png";
-// import mongo from "../images/logos/mongo.png";
-// import python from "../images/logos/python.png";
-// import react from "../images/logos/react.png";
-// import sass from "../images/logos/sass.png";
-// import sql from "../images/logos/sql.png";
-// import node from "../images/logos/node.png";
-// import unity from "../images/logos/unity.png";
+
 import { FaHtml5, FaGitAlt } from "react-icons/fa";
 import { DiCss3, DiSass } from "react-icons/di";
 import {
@@ -157,6 +146,11 @@ const StyledTitle = styled(motion.div)`
     color: gray;
     opacity: 0.3;
   }
+  @media (max-width: 900px) {
+    h1 {
+      display: none;
+    }
+  }
 `;
 
 const StyledLogoContainer = styled(motion.ul)`
@@ -175,6 +169,20 @@ const StyledLogoContainer = styled(motion.ul)`
     justify-content: center;
     p {
       font-weight: 700;
+    }
+  }
+  @media (max-width: 700px) {
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
+
+  @media (max-width: 700px) {
+    li {
+      padding: 1.2rem;
+
+      span {
+        font-size: 10px;
+      }
     }
   }
 `;

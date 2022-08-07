@@ -55,6 +55,11 @@ const StyledTitle = styled(motion.div)`
     color: gray;
     opacity: 0.3;
   }
+  @media (max-width: 900px) {
+    h1 {
+      display: none;
+    }
+  }
 `;
 
 const StyledAboutDesc = styled(motion.div)`
@@ -68,7 +73,7 @@ const StyledAboutDesc = styled(motion.div)`
   }
   h2 {
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
   }
   p {
@@ -85,6 +90,19 @@ const StyledAboutDesc = styled(motion.div)`
     }
     p {
       font-size: 2rem;
+      margin-top: 0rem;
+    }
+  }
+  @media (max-width: 700px) {
+    padding: 0 2rem;
+    text-align: center;
+    margin: 1rem 0.3rem;
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1.4rem;
       margin-top: 0rem;
     }
   }

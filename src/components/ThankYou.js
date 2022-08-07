@@ -28,7 +28,7 @@ const ThankYou = () => {
 const StyledContainer = styled(motion.div)`
   height: 30vh;
   width: 80%;
-  margin-top: 6rem;
+  margin-top: 8rem;
   margin-left: 8rem;
   text-align: left;
   span {
@@ -45,6 +45,16 @@ const StyledContainer = styled(motion.div)`
 
   @media (max-width: 1700px) {
     margin-top: 30rem;
+  }
+
+  @media (max-width: 700px) {
+    margin-top: 2rem;
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
   }
 `;
 

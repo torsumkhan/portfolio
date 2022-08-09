@@ -53,8 +53,8 @@ const Projects = () => {
                       target="_blank"
                     >
                       Live Site
-                    </a>
-                    |
+                    </a>{" "}
+                    |{" "}
                     <a
                       href="https://github.com/torsumkhan/ecommerce-store"
                       target="_blank"
@@ -112,8 +112,8 @@ const Projects = () => {
                   <p>
                     <a href="https://superign.netlify.app/" target="_blank">
                       Live Site
-                    </a>
-                    |
+                    </a>{" "}
+                    |{" "}
                     <a
                       href="https://github.com/torsumkhan/super-ign"
                       target="_blank"
@@ -145,8 +145,8 @@ const Projects = () => {
                   <p>
                     <a href="https://superspotify.netlify.app/" target="_blank">
                       Live Site
-                    </a>
-                    |
+                    </a>{" "}
+                    |{" "}
                     <a
                       href="https://github.com/torsumkhan/my-spotify"
                       target="_blank"
@@ -178,7 +178,7 @@ const Projects = () => {
                   <p>
                     <a href="https://megapexels.netlify.app/" target="_blank">
                       Live Site
-                    </a>
+                    </a>{" "}
                     |{" "}
                     <a
                       href="https://github.com/torsumkhan/mega-pexel"
@@ -211,8 +211,8 @@ const Projects = () => {
                       target="_blank"
                     >
                       Live Site
-                    </a>
-                    |
+                    </a>{" "}
+                    |{" "}
                     <a
                       href="https://github.com/torsumkhan/Football-app"
                       target="_blank"

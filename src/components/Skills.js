@@ -11,6 +11,7 @@ import {
   SiReact,
   SiTailwindcss,
   SiPython,
+  SiGraphql,
   SiPostgresql,
   SiMongodb,
   SiUnity,
@@ -105,6 +106,12 @@ const Skills = () => {
             <FaGitAlt size={70} />
           </span>
           <p>GIT</p>
+        </li>
+        <li>
+          <span>
+            <SiGraphql size={70} />
+          </span>
+          <p>GRAPHQL</p>
         </li>
         <li>
           <span>

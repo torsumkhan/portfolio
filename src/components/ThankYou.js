@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import Typical from "react-typical";
 
 const ThankYou = () => {
   const weekday = [
@@ -18,8 +19,50 @@ const ThankYou = () => {
     <StyledContainer>
       <h3>Thank you for sticking around &</h3>
       <p>
-        You Have an <span>awesome</span> F@*#ing {day}, I mean that shit.
-        Seriously.
+        hey, You have{" "}
+        <span>
+          <Typical
+            steps={[
+              "an amazing",
+              3000,
+              "an adventurous",
+              3000,
+              "a wild",
+              3000,
+              "an awesome",
+              3000,
+              "an exciting",
+              3000,
+              "an unbelievable",
+              3000,
+              "a majestic",
+              3000,
+              "a beautiful",
+              3000,
+              "a spectacular",
+              3000,
+              "a stunning",
+              3000,
+              "an inspirational",
+              3000,
+              "a wonderful",
+              3000,
+              "a briliant",
+              3000,
+              "an enjoyable",
+              3000,
+              "a fabulous",
+              3000,
+              "a phenomenal",
+              3000,
+              "a marvelous",
+              3000,
+            ]}
+            loop={Infinity}
+            wrapper="b"
+          />
+        </span>
+        {day}! I mean that shit. Seriously.
       </p>
     </StyledContainer>
   );

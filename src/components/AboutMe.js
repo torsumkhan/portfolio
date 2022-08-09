@@ -30,7 +30,7 @@ const AboutMe = () => {
           <span>Love</span> working with React and other cool frameworks.
         </p>
         <p>
-          Lifelong <span>learner</span> and proud dad.
+          Lifelong <span>learner</span>, coffee addict and a proud dad.
         </p>
         <p>If you fancy a chat feel free to drop me a line.</p>
       </StyledAboutDesc>

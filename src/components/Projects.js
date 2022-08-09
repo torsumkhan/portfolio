@@ -22,6 +22,7 @@ import pexels from "../images/05-pexels.png";
 import never from "../images/06-never-gone.png";
 import football from "../images/06-football.png";
 import capture from "../images/02-capture.png";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 const Projects = () => {
   return (
@@ -309,6 +310,7 @@ const StyledProjectContainer = styled(motion.div)`
       }
     }
   }
+
   @media (max-width: 1700px) {
     margin-top: 8rem;
     .details {

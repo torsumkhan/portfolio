@@ -9,12 +9,16 @@ const DropDown = ({ children, title }) => {
       className="project"
       onClick={() => setDropDown(!dropDown)}
     >
-      <motion.h2
+      <motion.div
         layout
-        style={{ fontSize: "3rem", fontWeight: 400, cursor: "pointer" }}
+        style={{
+          fontSize: "3rem",
+          fontWeight: 400,
+          cursor: "pointer",
+        }}
       >
         {title}
-      </motion.h2>
+      </motion.div>
       {dropDown ? children : ""}
       <motion.div layout className="project-line"></motion.div>
     </motion.div>

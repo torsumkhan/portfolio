@@ -62,8 +62,9 @@ const ThankYou = () => {
             wrapper="b"
           />
         </span>
-        {day}! I mean that shit. Seriously.
+        {day}!
       </p>
+      <p>I mean that. Seriously.</p>
     </StyledContainer>
   );
 };

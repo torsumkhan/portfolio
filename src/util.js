@@ -47,7 +47,7 @@ export const aboutmetitle = {
     },
   },
   show: {
-    x: 600,
+    x: 400,
     opacity: 1,
 
     transition: {

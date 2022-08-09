@@ -92,12 +92,15 @@ const StyledContainer = styled(motion.div)`
   }
 
   @media (max-width: 700px) {
-    margin-top: 2rem;
+    margin: 2rem auto;
+    padding: 0rem;
+    height: 60%;
     h3 {
       font-size: 2rem;
     }
     p {
       font-size: 1.6rem;
+      line-height: 0rem;
     }
   }
 `;

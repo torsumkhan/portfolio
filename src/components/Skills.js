@@ -141,6 +141,11 @@ const StyledContainer = styled(motion.div)`
   width: 100%;
   margin: 6rem auto;
   position: relative;
+  @media (max-width: 700px) {
+    margin: 6rem auto;
+    padding-bottom: 1rem;
+    height: 65%;
+  }
 `;
 
 const StyledTitle = styled(motion.div)`
@@ -179,13 +184,13 @@ const StyledLogoContainer = styled(motion.ul)`
     }
   }
   @media (max-width: 700px) {
-    margin-top: 0rem;
-    padding-top: 0rem;
+    margin: 0rem;
+    padding: 1rem;
   }
 
   @media (max-width: 700px) {
     li {
-      padding: 1.2rem;
+      padding: 1rem;
 
       span {
         font-size: 10px;

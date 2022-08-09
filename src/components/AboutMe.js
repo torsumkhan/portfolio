@@ -67,7 +67,7 @@ const StyledAboutDesc = styled(motion.div)`
   line-height: 4rem;
   text-align: left;
   font-size: 2.8rem;
-  margin-left: 8rem;
+  padding-left: 8rem;
   span {
     font-weight: 600;
   }
@@ -98,12 +98,13 @@ const StyledAboutDesc = styled(motion.div)`
     text-align: center;
     margin: 1rem 0.3rem;
     h2 {
-      font-size: 2rem;
+      font-size: 2.4rem;
       text-align: center;
     }
     p {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       margin-top: 0rem;
+      line-height: 2.8rem;
     }
   }
 `;

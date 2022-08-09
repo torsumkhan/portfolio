@@ -59,7 +59,10 @@ const StyledContainer = styled(motion.div)`
   text-align: left;
   position: relative;
   @media (max-width: 700px) {
-    margin-top: 1rem;
+    height: 30vh;
+    margin-top: 6rem;
+    padding-left: 0rem;
+    width: 100%;
   }
 `;
 
@@ -80,30 +83,30 @@ const StyledTitle = styled(motion.div)`
   }
 `;
 
-const StyledLogoContainer = styled(motion.dv)`
+const StyledLogoContainer = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: flex-start;
   @media (max-width: 900px) {
     a {
       img {
-        width: 10rem;
+        width: 8rem;
       }
     }
   }
 
   @media (max-width: 700px) {
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
     a {
       img {
-        width: 8rem;
+        width: 6rem;
       }
     }
-  }
-  @media (max-width: 700px) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-left: 6rem;
   }
 `;
 

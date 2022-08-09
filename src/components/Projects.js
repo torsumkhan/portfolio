@@ -226,7 +226,14 @@ const Projects = () => {
               </div>
             </DropDown>
 
-            <DropDown title="07 Never Gone - Interactive Video Game">
+            <DropDown
+              title="07 Never Gone - Interactive Video Game"
+              style={{
+                "@media (max-width:700px)": {
+                  fontSize: "1rem",
+                },
+              }}
+            >
               <div className="grid">
                 <div className="details">
                   <h3>Game Developer | Designer</h3>
@@ -283,6 +290,13 @@ const StyledProjectContainer = styled(motion.div)`
 
   .project {
     padding: 1rem 0rem;
+    @media (max-width: 700px) {
+      div {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 
   .details-container {
@@ -326,7 +340,7 @@ const StyledProjectContainer = styled(motion.div)`
     }
   }
   @media (max-width: 700px) {
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
 `;
 

@@ -10,11 +10,15 @@ const DropDown = ({ children, title }) => {
       onClick={() => setDropDown(!dropDown)}
     >
       <motion.div
+        className="mobile"
         layout
         style={{
           fontSize: "3rem",
           fontWeight: 400,
           cursor: "pointer",
+          "@media (max-width:700px)": {
+            fontSize: "1rem",
+          },
         }}
       >
         {title}
